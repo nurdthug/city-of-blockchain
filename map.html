@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Blockchain Infrastructure Map | City of Blockchain</title>
+  <meta name="description" content="A plain-English map of stablecoins, tokenization, wallets, data, custody, security, and AI rails.">
+  <meta name="theme-color" content="#0a0d12">
+  <style>
+    :root{--bg:#0a0d12;--panel:#111821;--ink:#f2f5ef;--muted:#9ca8a3;--teal:#29d3b8;--gold:#e6c05e;--line:rgba(242,245,239,.14)}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,rgba(41,211,184,.12),transparent 26rem),linear-gradient(315deg,rgba(230,192,94,.1),transparent 32rem),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a{color:inherit;text-decoration:none}
+    .topbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--line);background:rgba(10,13,18,.86);backdrop-filter:blur(18px)}.brand{display:inline-flex;align-items:center;gap:.75rem;font-weight:850}.mark{width:2.25rem;height:2.25rem;border:3px solid var(--ink);border-radius:8px;position:relative}.mark:before,.mark:after{content:"";position:absolute;top:.78rem;width:.45rem;height:.45rem;border-radius:50%;background:var(--teal)}.mark:before{left:.62rem}.mark:after{right:.62rem}.back{color:var(--muted);font-weight:750}
+    main{width:min(1040px,calc(100% - 2rem));margin:0 auto;padding:clamp(2.5rem,6vw,5rem) 0}header.hero{margin-bottom:2rem}.eyebrow{margin:0 0 1rem;color:var(--gold);font-size:.82rem;font-weight:850;text-transform:uppercase;letter-spacing:0}h1{max-width:900px;margin:0 0 1rem;font-size:clamp(3rem,7vw,6rem);line-height:.94;letter-spacing:0}h2{margin:0 0 1rem;font-size:clamp(1.9rem,4vw,3rem);line-height:1;letter-spacing:0}h3{margin:0 0 .65rem;font-size:1.22rem}p{line-height:1.58}.dek{max-width:760px;color:var(--muted);font-size:clamp(1.08rem,2vw,1.3rem)}.rule{height:1px;background:var(--line);margin:2rem 0}
+    .map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0}.node,.section,.callout{border:1px solid var(--line);border-radius:8px;background:rgba(17,24,33,.84)}.node{min-height:180px;padding:1.15rem}.node span{display:block;margin-bottom:1rem;color:var(--gold);font-weight:900}.node p,.section p,.callout p,li{color:var(--muted)}
+    .section{margin:1rem 0;padding:clamp(1.1rem,3vw,1.5rem)}.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.checklist{display:grid;gap:.8rem;margin:1rem 0 0;padding:0;list-style:none}.checklist li{padding:.85rem 1rem;border:1px solid var(--line);border-radius:8px;background:rgba(10,13,18,.42)}.callout{padding:1.25rem;margin:2rem 0;border-color:rgba(41,211,184,.35)}.button{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;margin-top:1rem;padding:.85rem 1.15rem;border-radius:8px;background:var(--teal);color:#06100e;font-weight:850}.muted{color:var(--muted)}footer{padding:1.5rem clamp(1rem,4vw,3rem);border-top:1px solid var(--line);color:var(--muted);display:flex;justify-content:space-between;gap:1rem}
+    @media(max-width:850px){.map,.two{grid-template-columns:1fr}footer{flex-direction:column}.topbar{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <nav class="topbar"><a class="brand" href="./"><span class="mark"></span><span>City of Blockchain</span></a><a class="back" href="./">Back to site</a></nav>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Free guide</p>
+      <h1>The Blockchain Infrastructure Map</h1>
+      <p class="dek">A plain-English reference for understanding what is actually being built: stablecoin rails, tokenized assets, wallets, data, custody, security, and AI payment infrastructure.</p>
+    </header>
+
+    <section class="callout">
+      <h2>The Core Idea</h2>
+      <p>Blockchain becomes useful when it improves a system: faster settlement, clearer records, programmable payments, portable identity, verifiable ownership, or safer coordination between parties that do not fully trust each other.</p>
+      <p class="muted">If nothing gets faster, cheaper, more transparent, more portable, or more secure, the token may just be decoration.</p>
+    </section>
+
+    <section class="map" aria-label="Infrastructure map">
+      <article class="node"><span>01</span><h3>Stablecoin Rails</h3><p>Digital dollars designed to move through internet-native payment infrastructure.</p></article>
+      <article class="node"><span>02</span><h3>Tokenized Assets</h3><p>Real-world claims represented on-chain for cleaner settlement and transfer.</p></article>
+      <article class="node"><span>03</span><h3>Wallets</h3><p>The user layer for identity, signatures, payments, and ownership control.</p></article>
+      <article class="node"><span>04</span><h3>Smart Contracts</h3><p>Software rules that execute transactions and permissions on shared ledgers.</p></article>
+      <article class="node"><span>05</span><h3>Data & Oracles</h3><p>External information that lets on-chain systems respond to the real world.</p></article>
+      <article class="node"><span>06</span><h3>Custody & Security</h3><p>The operating layer for storage, access, monitoring, and risk control.</p></article>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Layer 1</p>
+      <h2>Stablecoins</h2>
+      <div class="two">
+        <div>
+          <h3>What they do</h3>
+          <p>Stablecoins let value move on blockchain rails while attempting to track a stable asset, usually the US dollar.</p>
+        </div>
+        <div>
+          <h3>Why they matter</h3>
+          <p>They make payments faster, global, programmable, and less dependent on traditional banking hours.</p>
+        </div>
+      </div>
+      <ul class="checklist">
+        <li>Ask who issues the stablecoin and what backs it.</li>
+        <li>Ask where it can be redeemed and under what rules.</li>
+        <li>Watch payment companies, fintech apps, remittance tools, and AI-agent payment experiments.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Layer 2</p>
+      <h2>Tokenization</h2>
+      <p>Tokenization means representing ownership, access, or claims as digital tokens. The useful version is not magic. It is better market plumbing: clearer records, faster settlement, easier transfer, and possible 24/7 markets.</p>
+      <ul class="checklist">
+        <li>Strong signal: the token improves access, settlement, transparency, liquidity, or operations.</li>
+        <li>Weak signal: the token exists only so the project can sound like Web3.</li>
+        <li>Hard parts: legal rights, custody, compliance, redemption, and real liquidity.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Layer 3</p>
+      <h2>Wallets & Security</h2>
+      <p>A wallet is more than a place to hold tokens. It can be a login, signature tool, payment account, and identity layer. That makes wallet literacy the first practical skill in blockchain.</p>
+      <ul class="checklist">
+        <li>Never store seed phrases in screenshots, email, or cloud notes.</li>
+        <li>Never sign a wallet approval you do not understand.</li>
+        <li>Separate storage wallets, spending wallets, and testing wallets.</li>
+        <li>Review old approvals and revoke what you no longer use.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Layer 4</p>
+      <h2>AI x Blockchain</h2>
+      <p>AI agents will need more than prompts. They may need payments, permissions, verification, access control, and records of what they did. The serious AI x blockchain lane is not a token for every bot. It is payments, proof, identity, and coordination.</p>
+      <ul class="checklist">
+        <li>Strong use case: autonomous software pays for APIs, data, compute, or services.</li>
+        <li>Strong use case: verification proves what content, agent, or credential is authentic.</li>
+        <li>Weak use case: adding a token without changing the underlying system.</li>
+      </ul>
+    </section>
+
+    <section class="callout">
+      <h2>The 5-Question Filter</h2>
+      <ul class="checklist">
+        <li>What system gets cheaper, faster, or more trustworthy?</li>
+        <li>Who needs the shared record?</li>
+        <li>What asset, payment, permission, or proof is moving?</li>
+        <li>Where are the legal, custody, security, and compliance risks?</li>
+        <li>Would this still make sense if no token price ever went up?</li>
+      </ul>
+      <a class="button" href="https://www.instagram.com/cityofblockchain/">Follow City of Blockchain</a>
+    </section>
+  </main>
+  <footer><span>City of Blockchain</span><span>No price calls. No hype. #nurdthug</span></footer>
+</body>
+</html>
+
